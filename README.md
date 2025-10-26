@@ -1,80 +1,105 @@
-# Getting Started with Create React App
+# 🌿 Cardits — Transparent Carbon Credit Infrastructure on Blockchain
 
+## 🚀 Mission
+Carbon markets run on trust without verification — Cardits fixes that.  
+A blockchain platform for issuing, verifying, and trading carbon credits with transparency.  
+Sustainability should scale as fast as innovation — and trust should be built into every transaction.
 
-## Carbon Credits Application
+---
 
-Deployed on Vercel: [Cardits](https://cardits.vercel.app/login)
+## 🎯 Problem Statement
+The carbon credit process is slow, opaque, and unaccountable.  
+Manual audits, double-counted credits, and inaccessible marketplaces stall real decarbonization.
 
-An application that address both the regulatory and voluntary markets, with being a decentralized way to sell your unused carbon permits (issued by government) to other blockchain-based companies.
-We had initially decided to utilize Vue.js for this application, but ran into errors with routing. As a result, we pivoted to utilizing a React frontend with MetaMask SDK.
+---
 
+## ✅ Solution
+Cardits provides an on-chain carbon credit lifecycle:  
+1. Companies submit emissions reports  
+2. Auditors verify via DAO voting  
+3. Regulators mint verified credits  
+4. Credits trade transparently on a blockchain marketplace  
 
+No intermediaries. No silent edits. Full provenance.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## 🧠 System Architecture
+**Flow:**  
+Company → Report → DAO Verification → Mint Credits → Marketplace → Public Ledger  
+All state changes are on-chain and queryable for public audit.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🧩 Smart Contract Design
+- **Ownership:** Manages privileged roles (e.g., regulator).  
+- **Voting:** DAO verifies emission reports.  
+- **Auction:** Trustless bidding and transfer of verified credits.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Together they enable permissioned authority, verifiable validation, and decentralized trading.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 💻 Frontend / User Experience
+- **Dashboard:** Tracks credits, emissions, and compliance status  
+- **Analytics:** Line graphs + verification progress indicators  
+- **Marketplace:** View, bid, and purchase verified credits  
+- **Wallet Integration:** MetaMask + Ethers.js support  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠 Tech Stack
+**Frontend:** React, Material UI, React Router, Ethers.js  
+**Smart Contracts:** Solidity (0.8.x), Hardhat, Remix, Ethereum Testnets (Sepolia/Goerli)  
+**Storage:** On-chain reads + IPFS (planned) for audit docs  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🔐 Governance Model
+- **Regulator:** Issues credits through permissioned minting  
+- **Auditor DAO:** Votes on emission validity  
+- **Companies:** Submit data; cannot self-approve  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+All decisions and approvals are visible on-chain.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## ✅ MVP Features
+- DAO-based emissions verification  
+- On-chain role control  
+- Carbon credit auction contract  
+- React dashboard + wallet integration  
+- Report upload + verification status UI  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🔭 Future Integrations
+- ERC-1155 tokenized credits  
+- IPFS decentralized storage  
+- AI anomaly detection for fraud  
+- Fractional credit trading  
+- Multi-chain registry bridges  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🤝 Team
+**Built by:**  
+Ansh Kothari • Ansh Tandon • Aditya Kattil • Partth Kulkarni  
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+We believe climate accountability should be enforced by code, not promised by policy.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 📽 Presentation / Demo
+**Pitch Deck:** [Insert Google Slides / PDF Link Here]  
+**Example Screens:**  
+![System Overview](docs/slides/01_system_overview.png)  
+![DAO Verification](docs/slides/02_verification.png)  
+![Marketplace](docs/slides/03_marketplace.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📎 Summary
+Cardits = Carbon credit issuance, verification, and trading — all on-chain.  
+Auditors become a DAO. Regulators become contracts. Credits become traceable assets.  
+Transparent, scalable decarbonization — powered by blockchain.
