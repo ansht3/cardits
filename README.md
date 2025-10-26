@@ -1,4 +1,4 @@
-# 🌿 Cardits — Transparent Carbon Credit Infrastructure on Blockchain
+# 🌿 Cardits — Carbon Credit Infrastructure on Blockchain
 
 ## 🚀 Mission
 Carbon markets run on trust without verification — Cardits fixes that.  
@@ -86,16 +86,10 @@ All decisions and approvals are visible on-chain.
 **Built by:**  
 Ansh Kothari • Ansh Tandon • Aditya Kattil • Partth Kulkarni  
 
-We believe climate accountability should be enforced by code, not promised by policy.
-
 ---
 
 ## 📽 Presentation / Demo
-**Pitch Deck:** [Insert Google Slides / PDF Link Here]  
-**Example Screens:**  
-![System Overview](docs/slides/01_system_overview.png)  
-![DAO Verification](docs/slides/02_verification.png)  
-![Marketplace](docs/slides/03_marketplace.png)
+**Pitch Deck:** [View the Google Slides Presentation](https://docs.google.com/presentation/d/1VTOBbh-rzx3xWxiVdeyhGtzoNUoMfpTAC8YXsrAszqE/edit?slide=id.g2e615814cae_0_57#slide=id.g2e615814cae_0_57)  
 
 ---
 
