@@ -1,99 +1,89 @@
-# 🌿 Cardits — Carbon Credit Infrastructure on Blockchain
+# Cardits — Carbon Credit Infrastructure on Blockchain
 
-## 🚀 Mission
-Carbon markets run on trust without verification — Cardits fixes that.  
-A blockchain platform for issuing, verifying, and trading carbon credits with transparency.  
-Sustainability should scale as fast as innovation — and trust should be built into every transaction.
+Cardits is a blockchain platform for issuing, verifying, and trading carbon credits with clear provenance. It reduces fraud and manual bottlenecks by making verification and credit movement transparent and auditable.
 
----
+## Why this exists
+Today’s carbon credit workflows can be slow and hard to verify. Credits may be double-counted, audits can be inconsistent, and market access is fragmented. That lack of visibility makes trust expensive and slows real climate action.
 
-## 🎯 Problem Statement
-The carbon credit process is slow, opaque, and unaccountable.  
-Manual audits, double-counted credits, and inaccessible marketplaces stall real decarbonization.
+## What Cardits does
+Cardits puts the full carbon credit lifecycle on-chain:
 
----
+- Companies submit emissions or audit reports
+- Auditors verify reports through DAO voting
+- A regulator role mints verified credits
+- Credits are listed and traded through a marketplace contract
+- All state transitions remain publicly queryable for auditing
 
-## ✅ Solution
-Cardits provides an on-chain carbon credit lifecycle:  
-1. Companies submit emissions reports  
-2. Auditors verify via DAO voting  
-3. Regulators mint verified credits  
-4. Credits trade transparently on a blockchain marketplace  
+This removes silent edits and creates a single source of truth for report status, approvals, and transfers.
 
-No intermediaries. No silent edits. Full provenance.
+## How it’s built
+High-level flow:
 
----
+Company submissions → verification voting → credit minting → marketplace trading → public on-chain history
 
-## 🧠 System Architecture
-**Flow:**  
-Company → Report → DAO Verification → Mint Credits → Marketplace → Public Ledger  
-All state changes are on-chain and queryable for public audit.
+Everything important (roles, approvals, mint events, transfers) is recorded on-chain so anyone can validate what happened and when.
 
----
+## Contract components
+The core contracts are separated by responsibility:
 
-## 🧩 Smart Contract Design
-- **Ownership:** Manages privileged roles (e.g., regulator).  
-- **Voting:** DAO verifies emission reports.  
-- **Auction:** Trustless bidding and transfer of verified credits.  
+- Role / ownership controls  
+  Manages privileged actions (ex: regulator permissions)
+- Verification (DAO voting)  
+  Auditors approve or reject submitted reports
+- Marketplace / auction  
+  Trustless bidding and transfers for verified credits
 
-Together they enable permissioned authority, verifiable validation, and decentralized trading.
+Together, these contracts support permissioned issuance, decentralized validation, and transparent trading.
 
----
+## Product surface (UI)
+The frontend is designed to make status and actions easy to follow:
 
-## 💻 Frontend / User Experience
-- **Dashboard:** Tracks credits, emissions, and compliance status  
-- **Analytics:** Line graphs + verification progress indicators  
-- **Marketplace:** View, bid, and purchase verified credits  
-- **Wallet Integration:** MetaMask + Ethers.js support  
+- Dashboard for tracking credits, emissions submissions, and compliance status
+- Verification progress indicators and basic analytics
+- Marketplace view to browse, bid, and purchase credits
+- Wallet support via MetaMask and Ethers.js
 
----
+## Tools and technologies
+- Frontend: React, Material UI, React Router, Ethers.js
+- Smart contracts: Solidity (0.8.x), Hardhat, Remix, Ethereum testnets (Sepolia/Goerli)
+- Storage: On-chain reads today, with IPFS planned for audit documents
 
-## 🛠 Tech Stack
-**Frontend:** React, Material UI, React Router, Ethers.js  
-**Smart Contracts:** Solidity (0.8.x), Hardhat, Remix, Ethereum Testnets (Sepolia/Goerli)  
-**Storage:** On-chain reads + IPFS (planned) for audit docs  
+## Governance and roles
+Cardits is designed around a clear separation of powers:
 
----
+- Regulator: mints credits after verification (permissioned)
+- Auditor DAO: votes on whether reports are valid
+- Companies: submit reports but cannot approve their own submissions
 
-## 🔐 Governance Model
-- **Regulator:** Issues credits through permissioned minting  
-- **Auditor DAO:** Votes on emission validity  
-- **Companies:** Submit data; cannot self-approve  
+All approvals and outcomes are visible on-chain.
 
-All decisions and approvals are visible on-chain.
+## Current MVP
+Implemented MVP scope includes:
 
----
+- DAO-based emissions verification
+- Role-based control for minting and privileged actions
+- Auction/marketplace contract for credit trading
+- React dashboard with wallet connection
+- Report submission and verification status UI
 
-## ✅ MVP Features
-- DAO-based emissions verification  
-- On-chain role control  
-- Carbon credit auction contract  
-- React dashboard + wallet integration  
-- Report upload + verification status UI  
+## Roadmap ideas
+Planned or potential extensions:
 
----
+- ERC-1155 tokenized credits
+- IPFS-backed storage for audit documents
+- Fraud/anomaly detection to flag suspicious reports
+- Fractional credit trading
+- Multi-chain registry bridging
 
-## 🔭 Future Integrations
-- ERC-1155 tokenized credits  
-- IPFS decentralized storage  
-- AI anomaly detection for fraud  
-- Fractional credit trading  
-- Multi-chain registry bridges  
+## Team
+Built by:
+- Ansh Kothari
+- Ansh Tandon
+- Aditya Kattil
+- Partth Kulkarni
 
----
+## Demo
+- [Pitch deck](https://docs.google.com/presentation/d/1VTOBbh-rzx3xWxiVdeyhGtzoNUoMfpTAC8YXsrAszqE/edit?slide=id.g2e615814cae_0_57#slide=id.g2e615814cae_0_57)
 
-## 🤝 Team
-**Built by:**  
-Ansh Kothari • Ansh Tandon • Aditya Kattil • Partth Kulkarni  
-
----
-
-## 📽 Presentation / Demo
-**Pitch Deck:** [View the Google Slides Presentation](https://docs.google.com/presentation/d/1VTOBbh-rzx3xWxiVdeyhGtzoNUoMfpTAC8YXsrAszqE/edit?slide=id.g2e615814cae_0_57#slide=id.g2e615814cae_0_57)  
-
----
-
-## 📎 Summary
-Cardits = Carbon credit issuance, verification, and trading — all on-chain.  
-Auditors become a DAO. Regulators become contracts. Credits become traceable assets.  
-Transparent, scalable decarbonization — powered by blockchain.
+## One-line summary
+Cardits turns carbon credit issuance, verification, and trading into an auditable on-chain workflow where approvals are explicit, ownership is traceable, and market activity is transparent.
