@@ -83,7 +83,8 @@ Built by:
 - Partth Kulkarni
 
 ## Demo Video
-https://github.com/user-attachments/assets/5875a481-169d-4c2f-8e31-fed36047429e
+https://github.com/user-attachments/assets/ed71dbec-3e5b-42d3-aae8-2e28216c0592
+
 
 ## Pitch
 - [Deck](https://docs.google.com/presentation/d/1VTOBbh-rzx3xWxiVdeyhGtzoNUoMfpTAC8YXsrAszqE/edit?slide=id.g2e615814cae_0_57#slide=id.g2e615814cae_0_57)
