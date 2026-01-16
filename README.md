@@ -82,8 +82,11 @@ Built by:
 - Aditya Kattil
 - Partth Kulkarni
 
-## Demo
-- [Pitch deck](https://docs.google.com/presentation/d/1VTOBbh-rzx3xWxiVdeyhGtzoNUoMfpTAC8YXsrAszqE/edit?slide=id.g2e615814cae_0_57#slide=id.g2e615814cae_0_57)
+## Demo Video
+https://github.com/user-attachments/assets/5875a481-169d-4c2f-8e31-fed36047429e
+
+## Pitch
+- [Deck](https://docs.google.com/presentation/d/1VTOBbh-rzx3xWxiVdeyhGtzoNUoMfpTAC8YXsrAszqE/edit?slide=id.g2e615814cae_0_57#slide=id.g2e615814cae_0_57)
 
 ## One-line summary
 Cardits turns carbon credit issuance, verification, and trading into an auditable on-chain workflow where approvals are explicit, ownership is traceable, and market activity is transparent.
